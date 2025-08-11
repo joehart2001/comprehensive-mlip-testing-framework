@@ -20,7 +20,7 @@ Key goals of this framework include:
 
 ### Summary of currently implemented tests:
 <p align="center">
-  <img src="docs/images/benchmark_summary.png" alt="Benchmark Summary" width="500">
+  <img src="docs/images/benchmark_summary.png" alt="Benchmark Summary" width="700">
 </p>
 
 
