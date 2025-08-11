@@ -8,12 +8,7 @@ Key goals of this framework include:
     - MD tests, NEBs, phonons, elastic moduli, and more
 - Breadth: Testing on a wide range of systems to truly assess the ability of foundation MLIPs
     - Bulk inorganic crystals, molecular crystals, molecules, surfaces, MOFs, supramolecular systems, and more
-- Depth: the ability to swiftly investigate numbers, outliers and trends through an interactive analysis suite featuring:
-    - Interactive tables
-    - Interactive plots
-    - Structural visualisation
-    - Custom benchmark weights
-
+- Depth: the ability to swiftly investigate numbers, outliers and trends through an interactive analysis suite featuring: interactive tables, interactive plots, structural visualisation and custom benchmark weights
 
 ### Summary of currently implemented tests:
 <p align="center">
@@ -87,7 +82,7 @@ Below is an overview of current and planned benchmarks, including whether each i
 
 ---
 
-### Planned Additional Benchmarks
+## Planned Additional Benchmarks
 
 | Test Name | Category | Script Ready? | Implemented? | Level of Theory |
 |-----------|----------|---------------|--------------|-----------------|
@@ -98,7 +93,7 @@ Below is an overview of current and planned benchmarks, including whether each i
 | GMTKN55 (5 categories) | Molecules | ❌ | ❌ | Various high-level |
 | O₂ / H₂ reaction profiles | Molecules | ❌ | ❌ | PBE |
 | Torsion curves | Molecules | ❌ | ❌ | CCSD(T) / PBE |
-| X24 (molecule–surface) | Surfaces | ❌ | ❌ | PBE |
+| S24 (molecule–surface) | Surfaces | ❌ | ❌ | PBE |
 | OC20 | Surfaces | ❌ | ❌ | PBE |
 | QMOF | MOFs | ❌ | ❌ | PBE |
 | RDF/density of liquids | Liquids | ❌ | ❌ | Experiment / DFT |
