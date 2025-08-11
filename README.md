@@ -3,7 +3,7 @@
 This repository provides a comprehensive testing framework and interactive analysis suite for foundation Machine Learning Interatomic Potentials (MLIPs). The interactive analysis suite is currently hosted at:
 [http://mlip-testing.stfc.ac.uk:8050](http://mlip-testing.stfc.ac.uk:8050)
 
-Key goals of this framework include:
+Key features of this framework include:
 - Testing physics: Moving away from benchmarking solely on energies and forces
     - MD tests, NEBs, phonons, elastic moduli, and more
 - Breadth: Testing on a wide range of systems to truly assess the ability of foundation MLIPs
