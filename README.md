@@ -65,19 +65,18 @@ Below is an overview of current and planned benchmarks, including whether each i
 | A.30 Alanine tripeptide free energy surface | Biomolecules | ❌ | ❌ |  |
 | A.31 Molecule–surface interactions | Surfaces | ❌ | ❌ |  |
 | A.32 Computational efficiency (twenty-element alloy) | Performance | ❌ | ❌ |  |
-| A.33 MPA-0: Scaling up with the Alexandria dataset | Dataset Scaling | ❌ | ❌ |  |
 
 
 ## MACE-MP-0 Benchmarks
 
 | Test Name | Category | Script Ready? | Implemented? | Level of Theory |
 |-----------|----------|---------------|--------------|-----------------|
-| B.1 Phonons | Bulk Crystals | ❌ | ❌ |  |
-| B.2 Bulk & shear moduli | Bulk Crystals | ❌ | ❌ |  |
-| B.3 Cohesive energies | Bulk / Molecular Crystals | ❌ | ❌ |  |
+| B.1 Phonons | Bulk Crystals | ✅ | ✅ | PBE |
+| B.2 Bulk & shear moduli | Bulk Crystals | ✅ | ✅ | PBE |
+| B.3 Cohesive energies | Bulk / Molecular Crystals | ✅ | ✅ | DMC/PBE |
 | B.4 Atomization energies & lattice constants of solids | Bulk Crystals | ❌ | ❌ |  |
 | B.5 Reaction barrier heights | Molecules | ❌ | ❌ |  |
-| B.6 Homonuclear diatomics | Molecules | ❌ | ❌ |  |
+| B.6 Homonuclear diatomics | Molecules | ✅ | ✅ | N/A |
 
 
 ---
@@ -86,17 +85,16 @@ Below is an overview of current and planned benchmarks, including whether each i
 
 | Test Name | Category | Script Ready? | Implemented? | Level of Theory |
 |-----------|----------|---------------|--------------|-----------------|
-| EOS metals (various sizes) | Bulk Crystals | ❌ | ❌ | PBE |
-| Thermal conductivity | Bulk Crystals | ❌ | ❌ | PBE |
-| Formation energies | Bulk Crystals | ❌ | ❌ | PBE / Experiment |
-| Dimer interactions (S66) | Molecular | ❌ | ❌ | CCSD(T) |
-| GMTKN55 (5 categories) | Molecules | ❌ | ❌ | Various high-level |
-| O₂ / H₂ reaction profiles | Molecules | ❌ | ❌ | PBE |
-| Torsion curves | Molecules | ❌ | ❌ | CCSD(T) / PBE |
-| S24 (molecule–surface) | Surfaces | ❌ | ❌ | PBE |
-| OC20 | Surfaces | ❌ | ❌ | PBE |
-| QMOF | MOFs | ❌ | ❌ | PBE |
-| RDF/density of liquids | Liquids | ❌ | ❌ | Experiment / DFT |
+| EOS metals (various sizes) | Bulk Crystals | ❌ | ❌ |  |
+| Thermal conductivity | Bulk Crystals | ❌ | ❌ |  |
+| Formation energies | Bulk Crystals | ❌ | ❌ |  |
+| Dimer interactions (S66) | Molecular | ❌ | ❌ |  |
+| O₂ / H₂ reaction profiles | Molecules | ❌ | ❌ |  |
+| Torsion curves | Molecules | ❌ | ❌ |  |
+| S24 (molecule–surface) | Surfaces | ✅ | ✅ | PBE-BJD3 |
+| OC20 | Surfaces | ✅ | ✅ | PBE-BJD3 |
+| QMOF | MOFs | ✅ | ✅ | PBE |
+| RDF/density of water | Liquids | ✅ | ✅ | Experiment / PBE-D3 |
 
 
 ---
@@ -106,7 +104,7 @@ Below is an overview of current and planned benchmarks, including whether each i
 ### Main group thermo-chemistry
 | Test Name | Implemented? | Script Ready? | Level of Theory |
 |-----------|--------------|---------------|-----------------|
-| GMTKN55 | ❌ | ✅ | Various high-level |
+| GMTKN55 | ❌ | ✅ | CCSD(T) |
 | MB2061 Mindless molecules | ❌ | ✅ |  |
 | BH9 reactions | ❌ | ✅ |  |
 
@@ -121,9 +119,10 @@ Below is an overview of current and planned benchmarks, including whether each i
 | NCIA D442x10 London dispersion dissociation curves | ❌ | ✅ |  |
 | NCIA SH250x10 sigma-hole interactions (halogen/chalcogen/pnictogen bonds) | ❌ | ✅ |  |
 | NCIA R739x5 repulsive contacts | ❌ | ✅ |  |
-| S30L | ❌ | ✅ |  |
-| PLA15 for protein fragments interaction energies | ❌ | ✅ |  |
-| PLF547 for dimers interactions | ❌ | ✅ |  |
+| S30L | ✅ | ✅ | DLPNO-CCSD(T)/CBS |
+| LNCI16 | ✅ | ✅ | ωB97X-3c |
+| PLA15 for protein fragments interaction energies (full active sites) | ✅ | ✅ | MP2-F12 + DLPNO-CCSD(T) |
+| PLF547 for protein fragments interactions | ✅ | ✅ | MP2-F12 + DLPNO-CCSD(T) |
 | IONPI19 molecule-ion pairs | ❌ | ✅ |  |
 
 
@@ -163,7 +162,6 @@ Below is an overview of current and planned benchmarks, including whether each i
 ### Others
 | Test Name | Implemented? | Script Ready? | Level of Theory |
 |-----------|--------------|---------------|-----------------|
-| Mindless molecules | ❌ | ✅ |  |
 | Minnesota database | ❌ | ✅ |  |
 | CARBO33 carbocation relative energies and some reactions involving bigger systems | ❌ | ✅ |  |
 
